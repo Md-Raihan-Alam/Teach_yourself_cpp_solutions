@@ -18,12 +18,13 @@ int main()
         5,6,
         7,8
     };
-    int *p;
-    p=(int *)ob;
+    samp *p;
+    p=(samp *)ob;
     for(int i=0;i<4;i++){
-        for(int j=0;j<2;j++)
-            cout<<*(p+(i*2)+j)<<" ";
-        cout<<endl;
+            cout<<p->get_a()<<" ";
+            p++;
+            cout<<p->get_a()<<" ";
+            p++;
     }
     return 0;
 }
